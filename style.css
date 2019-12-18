@@ -1,0 +1,147 @@
+* {margin: 0; padding: 0;}
+ul li {list-style: none;}
+a {text-decoration: none;}
+header {width: 15%; height: 100%; position: fixed; left: 0; top: 0;}
+body {background-color: black;}
+nav {width: 85%; height: 35px; position: relative; margin-left: 15%; background: black; color: white;}
+section {width: 85%; position: relative; margin-left: 15%;}
+article {float: left; transition: all 0.5s; animation: scals 1s 1;}
+
+article:nth-child(1) {width: 60%; height: 520px; background: #ddd;}
+article:nth-child(2) {width: 40%; height: 260px; background: #ccc;}
+article:nth-child(3) {width: 20%; height: 260px; background: #bbb;}
+article:nth-child(4) {width: 20%; height: 260px; background: #aaa;}
+article:nth-child(5) {width: 20%; height: 260px; background: #999;}
+article:nth-child(6) {width: 40%; height: 260px; background: #888;}
+article:nth-child(7) {width: 20%; height: 260px; background: #777;}
+article:nth-child(8) {width: 20%; height: 260px; background: #666;}
+article:nth-child(9) {width: 40%; height: 260px; background: #555;}
+article:nth-child(10) {width: 20%; height: 260px; background: #444;}
+article:nth-child(11) {width: 20%; height: 260px; background: #333;}
+article:nth-child(12) {width: 20%; height: 260px; background: #222;}
+
+@keyframes scals {0% {transform: scale(0);}
+						100% {transform: scale(1);}}
+
+header h1 {width: 180px; height: 136px; position: absolute; top: 70px; left: 25%;}
+#gnb {position: absolute; top: 400px; right: 77px;}
+#gnb a {display: block; padding: 8px 30px 8px 30px; font-size: 17px; font-weight: bold; color: #555; text-align: left; line-height: 1.8; transition: all 0.5s;}
+#gnb a:hover {color: skyblue;}
+.snsset {width: 120px; height: 47px; position: absolute; bottom: 50px; right: 50%; margin-right: -45px;}
+
+article > div {width: 100%; height: 100%;}
+div.bg1 {background-image: url("../img/pic1.jpg")}
+div.bg2 {background-image: url("../img/pic2.jpg")}
+div.bg3 {background-image: url("../img/pic3.jpg")}
+div.bg4 {background-image: url("../img/pic4.jpg")}
+div.bg5 {background-image: url("../img/pic5.jpg")}
+div.bg6 {background-image: url("../img/pic6.jpg")}
+div.bg7 {background-image: url("../img/pic7.jpg")}
+div.bg {background-size: cover; background-position: 50% 50%;}
+
+article {overflow: hidden; font-size: 300%; color: white; text-align: center;}
+.txt {color: #666; background-color: #fff; box-sizing: border-box; padding: 40px 30px; transition: all 1s; position: relative;}
+article:nth-child(3) .txt {background-color: #bff7fa;}
+article:nth-child(11) .txt {background-color: #e3f1fb;}
+.txt i {font-size: 300px; color: #b2effc; opacity: 0.5; position: absolute; bottom: 0; left: 0; transition: all 0.7s}
+article:nth-child(3) .txt i {position: absolute; bottom: -20px; left: -15px; font-size: 200px; color: #fff; opacity: 0.7;}
+.txt strong {font-size: 30px; font-weight: bold; line-height: 1.6; color: #444; margin-bottom: 20px; transition: all 1s;}
+
+article:hover .txt {background-color: #6ce2fb; color: #fff;}
+article:hover .txt i {left: 0; opacity: 0.5;}
+article:hover .txt strong {color: #fff;}
+
+@media screen and (min-width: 1280px) and (max-width: 1599px){
+header {position: relative; width: 100%; height: 80px;}
+nav {width: 100%; margin-left: 0;}
+section {width: 100%; margin-left: 0;}
+header h1 {width: 200px; height: 40px; background-image: url("../img/logo2.png"); background-size: 200px 40px; top: 20px; left: 20px; margin-left: 0px;}
+#gnb {top: 20px; right: 200px;}
+#gnb li {float: left;}
+.snsset {bottom: 20px; right: 80px;}}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px){
+header {position: relative; width: 100%; height: 80px;}
+nav {width: 100%; margin-left: 0;}
+section {width: 100%; margin-left: 0;}
+article:nth-child(1) {width: 75%; height: 520px; background: #ddd;}
+article:nth-child(2) {width: 25%; height: 260px; background: #ccc;}
+article:nth-child(3) {width: 25%; height: 260px; background: #bbb;}
+article:nth-child(4) {width: 25%; height: 260px; background: #aaa;}
+article:nth-child(5) {width: 25%; height: 260px; background: #999;}
+article:nth-child(6) {width: 50%; height: 260px; background: #888;}
+article:nth-child(7) {width: 25%; height: 260px; background: #777;}
+article:nth-child(8) {width: 25%; height: 260px; background: #666;}
+article:nth-child(9) {width: 50%; height: 260px; background: #555;}
+article:nth-child(10) {width: 25%; height: 260px; background: #444;}
+article:nth-child(11) {width: 50%; height: 260px; background: #333;}
+article:nth-child(12) {width: 25%; height: 260px; background: #222;}
+header h1 {width: 200px; height: 40px; background-image: url("../img/logo2.png"); background-size: 200px 40px; top: 20px; left: 20px; margin-left: 0px;}
+#gnb li {float: left;}
+#gnb {top: 20px; right: 30px;}
+.snsset {display: none;}}
+
+@media screen and (min-width: 780px) and (max-width: 1023px){
+header {position: relative; width: 100%; height: 80px;}
+nav {width: 100%; margin-left: 0;}
+section {width: 100%; margin-left: 0;}
+article:nth-child(1) {width: 100%; height: 520px; background: #ddd;}
+article:nth-child(2) {width: 33.3%; height: 260px; background: #ccc;}
+article:nth-child(3) {width: 33.3%; height: 260px; background: #bbb;}
+article:nth-child(4) {width: 33.3%; height: 260px; background: #bbb;}
+article:nth-child(5) {width: 33.3%; height: 260px; background: #888;}
+article:nth-child(7) {width: 33.3%; height: 260px; background: #999;}
+article:nth-child(8) {width: 33.3%; height: 260px; background: #666;}
+article:nth-child(9) {width: 66.6%; height: 260px; background: #555;}
+article:nth-child(11) {width: 33.3%; height: 260px; background: #bbb;}
+article:nth-child(6), article:nth-child(10), article:nth-child(12) {display: none;}
+header h1 {width: 200px; height: 40px; background-image: url("../img/logo2.png"); background-size: 200px 40px; top: 20px; left: 20px; margin-left: 0px;}
+#gnb li {float: left;}
+#gnb {top: 20px; right: 10px;}
+.snsset {display: none;}}
+
+@media screen and (min-width: 640px) and (max-width: 779px){
+html {border: 10px solid red;}
+header {position: relative; width: 100%; height: 80px;}
+nav {width: 100%; margin-left: 0;}
+section {width: 100%; margin-left: 0;}
+article:nth-child(1) {width: 100%; height: 400px; background: #ddd;}
+article:nth-child(2) {width: 100%; height: 260px; background: #ccc;}
+article:nth-child(4) {width: 50%; height: 260px; background: #bbb;}
+article:nth-child(6) {width: 50%; height: 260px; background: #bbb;}
+article:nth-child(9) {width: 100%; height: 260px; background: #555;}
+article:nth-child(11) {width: 50%; height: 260px; background: #999;}
+article:nth-child(12) {width: 50%; height: 260px; background: #666;}
+article:nth-child(3), article:nth-child(5), article:nth-child(7), article:nth-child(8), article:nth-child(10) {display: none;}
+header h1 {width: 200px; height: 40px; background-image: url("../img/logo2.png"); background-size: 200px 40px; top: 20px; left: 20px; margin-left: 0px;}
+#gnb li {float: left;}
+#gnb {top: 20px; right: 10px;}
+.snsset {display: none;}}
+
+@media screen and (min-width: 480px) and (max-width: 639px){
+header {position: relative; width: 100%; height: 130px;}
+section {width: 100%; margin-left: 0;}
+article:nth-child(1) {width: 100%; height: 150px; background: #ddd;}
+article:nth-child(2) {width: 100%; height: 150px; background: #ccc;}
+article:nth-child(3) {width: 50%; height: 150px; background: #bbb;}
+article:nth-child(5) {width: 50%; height: 150px; background: #999;}
+article:nth-child(7) {width: 50%; height: 150px; background: #888;}
+article:nth-child(8) {width: 50%; height: 150px; background: #666;}
+article:nth-child(9) {width: 100%; height: 150px; background: #555;}
+nav, article:nth-child(4), article:nth-child(6), article:nth-child(10), article:nth-child(11), article:nth-child(12) {display: none;}
+header h1  {position: relative; width: 200px; height: 40px; background-image: url("../img/logo2.png"); background-size: 200px 40px; top: 20px; left: 20px; margin: 0 auto;}
+#gnb {width: 100%; height: 40px; top: 60px; right: 0;}
+#gnb li {float: left; width: 25%;}
+.snsset {display: none;}}
+
+@media screen and (max-width: 479px){
+header {position: fixed; width: 100%; height: 200px; z-index: 10;}
+section {width: 100%; margin-left: 0;}
+article:nth-child(1) {display: block; width: 100%; height: 100%; background: #ddd; position: fixed;}
+nav, article {display: none;}
+header h1 {top: 20px; width: 140px;}
+#gnb {width: 250px; top: 140px; margin: 20px auto;}
+#gnb li a {border-radius: 10px; opacity: 0.5; background-color: #000; color: white; margin-top: 10px; margin-left: 10px; z-index: 10;}
+#gnb li a:hover {opacity: 1; color: white;}
+.snsset {display: none;}
+}
